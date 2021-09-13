@@ -1,0 +1,714 @@
+[
+  {
+    "text": "no way",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "duration",
+        "start": 3,
+        "end": 6,
+        "confidence_entity": 0.8606047630310059,
+        "value": "way",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "what should I eat?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "main",
+        "start": 14,
+        "end": 17,
+        "confidence_entity": 0.8169761300086975,
+        "value": "eat",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Give me a quick recipe for duck",
+    "entities": [
+      {
+        "start": 10,
+        "end": 15,
+        "value": "30 minutes",
+        "entity": "duration"
+      },
+      {
+        "start": 27,
+        "end": 31,
+        "value": "duck",
+        "entity": "main"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "duration",
+        "start": 10,
+        "end": 15,
+        "confidence_entity": 0.9955364465713501,
+        "value": "30 minutes",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "show me the easy way to cook chicken",
+    "entities": [
+      {
+        "start": 12,
+        "end": 16,
+        "value": "easy",
+        "entity": "duration"
+      },
+      {
+        "start": 29,
+        "end": 36,
+        "value": "chicken",
+        "entity": "main"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "duration",
+        "start": 12,
+        "end": 20,
+        "confidence_entity": 0.6290339231491089,
+        "value": "easy way",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main",
+        "start": 29,
+        "end": 36,
+        "confidence_entity": 0.9912282228469849,
+        "value": "chicken",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "help me find some fish recipe around half of clock can be complete",
+    "entities": [
+      {
+        "start": 18,
+        "end": 22,
+        "value": "fish",
+        "entity": "main"
+      },
+      {
+        "start": 37,
+        "end": 50,
+        "value": "under_30_minutes",
+        "entity": "duration"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main",
+        "start": 18,
+        "end": 22,
+        "confidence_entity": 0.9935439825057983,
+        "value": "fish",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "please suggest me a easy and fast recipe",
+    "entities": [
+      {
+        "start": 20,
+        "end": 24,
+        "value": "easy",
+        "entity": "duration"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "duration",
+        "start": 20,
+        "end": 28,
+        "confidence_entity": 0.9270373582839966,
+        "value": "easy and",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "what recipes are easy?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "duration",
+        "start": 17,
+        "end": 21,
+        "confidence_entity": 0.9987033605575562,
+        "value": "easy",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "something with pork",
+    "entities": [
+      {
+        "start": 15,
+        "end": 19,
+        "value": "pork",
+        "entity": "main"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "shallots",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "shallots",
+        "entity": "main"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "something with noodles",
+    "entities": [
+      {
+        "start": 15,
+        "end": 22,
+        "value": "noodles",
+        "entity": "main"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "noodles",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "noodles",
+        "entity": "main"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "an hour and a half",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "main",
+        "start": 8,
+        "end": 11,
+        "confidence_entity": 0.7143576145172119,
+        "value": "and",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "show me the easy way to cook beef",
+    "entities": [
+      {
+        "start": 12,
+        "end": 16,
+        "value": "easy",
+        "entity": "duration"
+      },
+      {
+        "start": 29,
+        "end": 33,
+        "value": "beef",
+        "entity": "main"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "duration",
+        "start": 12,
+        "end": 20,
+        "confidence_entity": 0.6774110794067383,
+        "value": "easy way",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main",
+        "start": 29,
+        "end": 33,
+        "confidence_entity": 0.8981788754463196,
+        "value": "beef",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "show me the easy way to cook fish",
+    "entities": [
+      {
+        "start": 12,
+        "end": 16,
+        "value": "easy",
+        "entity": "duration"
+      },
+      {
+        "start": 29,
+        "end": 33,
+        "value": "fish",
+        "entity": "main"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "duration",
+        "start": 12,
+        "end": 20,
+        "confidence_entity": 0.7120242714881897,
+        "value": "easy way",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main",
+        "start": 29,
+        "end": 33,
+        "confidence_entity": 0.9162628650665283,
+        "value": "fish",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "help me find a chicken recipe which can finish around 30 minutes",
+    "entities": [
+      {
+        "start": 15,
+        "end": 22,
+        "value": "chicken",
+        "entity": "main"
+      },
+      {
+        "start": 54,
+        "end": 64,
+        "value": "under_30_minutes",
+        "entity": "duration"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main",
+        "start": 15,
+        "end": 22,
+        "confidence_entity": 0.8082062602043152,
+        "value": "chicken",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "main",
+        "start": 40,
+        "end": 46,
+        "confidence_entity": 0.6281997561454773,
+        "value": "finish",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "duration",
+        "start": 54,
+        "end": 64,
+        "confidence_entity": 0.9656642079353333,
+        "value": "under_30_minutes",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want to cook a simple recipe",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "duration",
+        "start": 17,
+        "end": 23,
+        "confidence_entity": 0.9976546764373779,
+        "value": "easy",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "asian",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "asian",
+        "entity": "main"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I've only got 1 hour)",
+    "entities": [
+      {
+        "start": 14,
+        "end": 20,
+        "value": "1 hour",
+        "entity": "duration"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "duration",
+        "start": 14,
+        "end": 15,
+        "confidence_entity": 0.9527788758277893,
+        "value": "1",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "romaine lettuces",
+    "entities": [
+      {
+        "start": 0,
+        "end": 16,
+        "value": "romaine lettuces",
+        "entity": "main"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "mascarpone",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "mascarpone",
+        "entity": "main"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "an hour",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "an hour",
+        "entity": "duration"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "0000",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "0000",
+        "entity": "id"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "duration",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.7383308410644531,
+        "value": "0000",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "time to cook",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "time to cook",
+        "entity": "change_duration"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "change_duration",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9846559762954712,
+        "value": "time",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Could you give me a vegan recipe",
+    "entities": [
+      {
+        "start": 20,
+        "end": 25,
+        "value": "vegan",
+        "entity": "main"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I want a veggie dish",
+    "entities": [
+      {
+        "start": 9,
+        "end": 15,
+        "value": "vegeterian",
+        "entity": "dietary"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "ciabatta loaf",
+    "entities": [
+      {
+        "start": 0,
+        "end": 13,
+        "value": "ciabatta loaf",
+        "entity": "main"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.7190753817558289,
+        "value": "ciabatta",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "an hour",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "duration",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.8379316329956055,
+        "value": "an hour",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "mangetout",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "mangetout",
+        "entity": "main"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "bacon",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "bacon",
+        "entity": "main"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "dish",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "dish",
+        "entity": "change_main"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "good afternoon",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "main",
+        "start": 5,
+        "end": 14,
+        "confidence_entity": 0.6457003355026245,
+        "value": "afternoon",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "good afternoon",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "main",
+        "start": 5,
+        "end": 14,
+        "confidence_entity": 0.6457003355026245,
+        "value": "afternoon",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Can I have a meat dish",
+    "entities": [
+      {
+        "start": 13,
+        "end": 17,
+        "value": "meat",
+        "entity": "main"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "find me some filipino chicken recipe",
+    "entities": [
+      {
+        "start": 13,
+        "end": 21,
+        "value": "filipino",
+        "entity": "duration"
+      },
+      {
+        "start": 22,
+        "end": 29,
+        "value": "chicken",
+        "entity": "main"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "main",
+        "start": 22,
+        "end": 29,
+        "confidence_entity": 0.9593099355697632,
+        "value": "chicken",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "how to do biscult?",
+    "entities": [
+      {
+        "start": 10,
+        "end": 17,
+        "value": "biscult",
+        "entity": "main"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What is 2 + 2?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "duration",
+        "start": 8,
+        "end": 9,
+        "confidence_entity": 0.9284794926643372,
+        "value": "2",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "id",
+        "start": 12,
+        "end": 13,
+        "confidence_entity": 0.5691335797309875,
+        "value": "2",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "sausages",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "sausages",
+        "entity": "main"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "half an hour",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "half an hour",
+        "entity": "duration"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "duration",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.5428571701049805,
+        "value": "half",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "duration",
+        "start": 8,
+        "end": 12,
+        "confidence_entity": 0.6007378697395325,
+        "value": "hour",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "[shortcut-pumpkin-soup]",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "main",
+        "start": 1,
+        "end": 22,
+        "confidence_entity": 0.989687979221344,
+        "value": "shortcut-pumpkin-soup",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

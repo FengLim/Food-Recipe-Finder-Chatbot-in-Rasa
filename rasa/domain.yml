@@ -1,0 +1,142 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - positive
+  - negative
+  - thank_you
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - request_recipe:
+      use entities: []
+  - inform
+  - inform_dietary
+  - inform_id
+  - correct_dietary_negative
+  - change_choices
+  - request_easy_recipe
+  - out_of_scope
+
+actions:
+  - action_hello_world
+  - action_search_recipe
+  - action_find_recipe
+  - action_show_recipe
+  - utter_sad_goodbye
+  - action_find_easy_recipe
+  - utter_out_of_scope
+
+entities:
+  - main
+  - duration
+  - id
+
+
+slots:
+  duration:
+    auto_fill: false
+    type: text
+    influence_conversation: true
+  main:
+    auto_fill: false
+    type: text
+    influence_conversation: true
+
+responses:
+  utter_ask_dietary:
+  - text: "Do you have any dietary requirements?"
+
+  utter_ask_duration:
+  - text: "Right, how long do you have to cook?"
+  - text: "Sure, how long do you have to cook?"
+
+  utter_ask_main:
+  - text: "OK, what sort of dish do you want?"
+  - text: "What particular ingredients are you after?"
+  - text: "anything specific you would like?"
+
+  utter_ask_recipe_name:
+  - text: "Do you know the name of recipe you want?"
+  - text: "What is name of recipe you like to cook?"
+  - text: "Please give me the name of recipe."
+
+  utter_ask_satisfied:
+  - text: "How about this?"
+  - text: "Are you satisfied this recipe?"
+
+  utter_confirm:
+  - text: "Sure!"
+  - text: "Of course"
+  - text: "Okay"
+
+  utter_default:
+  - text: "I'm sorry I don't understand that"
+  - text: "I'm not sure I understand"
+
+  utter_goodbye:
+  - text: "Okay, goodbye"
+  - text: "Have a nice day!"
+
+  utter_goodbye_neutral:
+  - text: "Okay, goodbye"
+  - text: "Have a nice day!"
+
+  utter_greet:
+  - text: "Hey!"
+  - text: "Hello"
+
+  utter_happy_goodbye:
+  - text: "Enjoy your meal!"
+
+  utter_iamabot:
+  - text: "Yes, I'm the bot!"
+
+  utter_ingredients_required:
+  - text: "Great!, this is what you'll need"
+  - text: "In that case, you'll need these ingredients"
+
+  utter_no_main_match:
+  - text: "Sorry, I haven't got anything matching that"
+
+  utter_no_more_matches:
+  - text: "I'm sorry that was all that I could find in my database"
+
+  utter_no_time2cook_match:
+  - text: "I'm afraid I don't have anything that quick"
+
+  utter_nomatches:
+  - text: "sorry I didn't find any matches for those search parameters"
+
+  utter_sad_goodbye:
+  - text: "Sorry I couldn't help you today, goodbye..."
+
+  utter_search_again:
+  - text: "Shall I search for something else?"
+  - text: "Would you like me to look for something else?"
+
+  utter_should_bot_get_recipe:
+  - text: "Would you like me to find you a recipe to cook?"
+  - text: "Can I help you in finding you a recipe"
+
+  utter_sorry:
+  - text: "sorry"
+
+  utter_submit:
+  - text: "Let me just check my database for you"
+
+  utter_which_slot_to_change:
+  - text: "Would you like to search for different ingredients, a different cooking time or both?"
+
+  utter_introduce_bot_itself:
+  - text: "I am chefbot, what can I help you?"
+
+  utter_out_of_scope:
+  - text: "Sorry, I can't handle that request."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

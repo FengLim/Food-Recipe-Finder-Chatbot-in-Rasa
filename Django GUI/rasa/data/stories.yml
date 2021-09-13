@@ -1,0 +1,28 @@
+version: "2.0"
+
+stories:
+- story: only greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_introduce_bot_itself
+
+- story: request_recipe
+  steps:
+  - intent: request_recipe
+  - action: utter_confirm
+  - action: action_search_recipe
+  - intent: inform_id
+  - action: action_show_recipe
+
+- story: satisfied
+  steps:
+  - action: utter_ask_satisfied
+  - intent: thank_you
+  - action: utter_happy_goodbye
+
+- story: not_satisfied
+  steps:
+  - action: utter_ask_satisfied
+  - intent: negative
+  - action: utter_sad_goodbye

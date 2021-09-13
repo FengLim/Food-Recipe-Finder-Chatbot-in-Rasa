@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Chefbot</title>
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+	<link rel="stylesheet" href="https://npm-scalableminds.s3.eu-central-1.amazonaws.com/@scalableminds/chatroom@master/dist/Chatroom.css" />
+	<link rel="stylesheet" href="https://drive.google.com/uc?id=1x2TCnJdXTQFErgZhxjMUWKIIfIfSbIy-">
+
+</head>
+
+<body>
+	<div class="pimg1">
+		<div class="ptext">
+			<span>
+				Welcome To Chefbot
+			</span>
+		</div>
+	</div>
+
+	<section class="section section-light">
+		<h2>What is Chefbot</h2>
+		<p>
+			Chefbot is an AI chatbot which can give a suitable response to the user by message from user to help people can find the recipe they like.<br>
+			It can offer the recipe with the highest matching degree based on the type of dish and the ingredients that the consumer desires.
+		</p>
+	</section>
+
+	<div class="pimg2">
+		<div class="ptext">
+			<span class="border">
+				Save your time & Bring you newness
+			</span>
+		</div>
+	</div>
+
+	<section class="section section-dark">
+		<h2>How to Ask</h2>
+		<p>
+			Enter the (type) of recipe you want and what (ingredient) you have.<br>
+			Then Chefbot will give you a list of recipe based on input given match with database.
+		</p>
+	</section>
+
+
+	<div class="pimg3">
+		<div class="ptext">
+			<span class="border">
+				Voice Interaction
+			</span>
+		</div>
+	</div>
+
+	<section class="section section-dark">
+		<p>
+			This chatbot is more compassionate than typical recipe finder because it act like user talk to a human, not a cold computer. <br>To enhance its humanization, this programme also employs voice response.
+		</p>
+	</section>
+
+	<div class="pimg1">
+		<div class="ptext">
+			<span class="broder">
+				Chefbot
+			</span>
+		</div>
+	</div>
+
+  <div class="chat-container"></div>
+
+  <script src="https://npm-scalableminds.s3.eu-central-1.amazonaws.com/@scalableminds/chatroom@master/dist/Chatroom.js"/></script>
+  <script type="text/javascript">
+    var chatroom = new window.Chatroom({
+      host: "http://localhost:5005",
+      welcomeMessage: "I am chefbot, what can I help you?",
+      container: document.querySelector(".chat-container"),
+
+    });
+    chatroom.openChat();
+  </script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Chefbot</title>
+    {% load static %}
+	<link rel="stylesheet" href="{% static 'style.css'%}">
+
+</head>
+<body>
+	<div class="pimg1">
+		<div class="ptext">
+			<span class="broder">
+				Chefbot
+			</span>
+		</div>
+	</div>
+
+	<section class="section section-light">
+		<h2>Section One</h2>
+		<p>
+			lorem100(sentences)
+		</p>
+	</section>
+
+	<div class="pimg2">
+		<div class="ptext">
+			<span class="broder">
+				Second title
+			</span>
+		</div>
+	</div>
+
+	<section class="section section-dark">
+		<h2>Section Two</h2>
+		<p>
+			lorem100(sentences)
+		</p>
+	</section>
+
+
+	<div class="pimg3">
+		<div class="ptext">
+			<span class="broder">
+				Third title
+			</span>
+		</div>
+	</div>
+
+	<section class="section section-dark">
+		<h2>Section 3</h2>
+		<p>
+			lorem100(sentences)
+		</p>
+	</section>
+
+	<div class="pimg1">
+		<div class="ptext">
+			<span class="broder">
+				Chefbot
+			</span>
+		</div>
+	</div>
+<style>
+    .rw-conversation-container{width:40%; height:100%;}
+
+    body, html{
+	height:100%;
+	margin:0;
+	font-size:16px;
+	font-family:"Lato", sans-serif;
+	font-weight:400;
+	line-height:1.8em;
+	color:#666
+}
+
+.pimg1, .pimg2, .pimg3{
+	position:relative;
+	opacity:0.70;
+	background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+
+	background-attachment:fixed;
+}
+
+.pimg1{
+	background-image:url('../food1.jpg');
+	min-height:400px;
+}
+
+.pimg2{
+	background-image:url('../food2.jpg');
+	min-height:400px;
+}
+
+.pimg3{
+	background-image:url('../food3.jpg');
+	min-height:400px;
+}
+</style>
+<script>!(function () {
+  let e = document.createElement("script"),
+    t = document.head || document.getElementsByTagName("head")[0];
+  (e.src =
+    "https://cdn.jsdelivr.net/npm/rasa-webchat@1.x.x/lib/index.js"),
+    // Replace 1.x.x with the version that you want
+    (e.async = !0),
+    (e.onload = () => {
+      window.WebChat.default(
+        {
+          initPayload: '/greet',
+          customData: { language: "en" },
+          socketUrl: "http://localhost:5005",
+          title: "Chefbot"
+          // add other props here
+        },
+        null
+      );
+    }),
+    t.insertBefore(e, t.firstChild);
+})();
+
+
+</script>
+</body>
+</html>

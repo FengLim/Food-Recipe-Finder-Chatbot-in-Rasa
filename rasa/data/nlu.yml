@@ -1,0 +1,349 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - halo
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - yes please
+    - yep
+    - yup
+
+- intent: positive
+  examples: |
+    - sound good
+    - look excellent
+    - yum
+    - delicous
+    - nice
+    - awesome
+    - brilliant
+
+- intent: negative
+  examples: |
+    - noice
+    - looks horrible
+    - urgh
+    - grim
+    - I don't like
+    - I don't want those recipe
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - I don't
+    - nope
+
+- intent: thank_you
+  examples: |
+    - thanks
+    - thank you
+    - cheers
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - who are you?
+
+- intent: request_recipe
+  examples: |
+    - what should I eat?
+    - give me a recipe?
+    - what food to cook?
+    - what should I cook?
+    - Give me a [quick](duration:30 minutes) recipe for [duck](main)
+    - Could you give me a recipe for [pasta](main)
+    - Could you give me a [vegan](main) recipe
+    - I want a [veggie](dietary:vegeterian) dish
+    - Can I have a [meat](main) dish
+    - I've got [20 mins](duration) please could I have a recipe for [pasta](main)
+    - please could i have a recipe
+    - Could you give me something with [chicken](main) in
+    - yeah please could you give me something with [chicken](main)
+    - what [chicken](main) dish can I cook
+    - what can I cook for supper
+    - can you give me a [rice](main) dish for supper
+    - what [chicken](main) dish should i cook for tonight
+    - find me an [easy](duration) [chicken](main) recipe
+    - find me an [easy](duration) [beef](main) recipe
+    - find me an [easy](duration) [lobster](main) recipe
+    - find me an [easy](duration) [pasta](main) recipe
+    - find me some [easy](duration) [chicken](main) recipe
+    - find me some [easy](duration) [beef](main) recipe
+    - find me some [easy](duration) [lobster](main) recipe
+    - find me some [easy](duration) [pasta](main) recipe
+    - find me some [steam](duration) [chicken](main) recipe
+    - find me some [thai](duration) [chicken](main) recipe
+    - find me some [korean](duration) [chicken](main) recipe
+    - find me some [indian](duration) [chicken](main) recipe
+    - find me some [filipino](duration) [chicken](main) recipe
+    - find me some [thai](duration) food
+    - find me some [korean](duration) food
+    - find me some [indian](duration) food
+    - find me some [thai](duration) recipe
+    - find me some [korean](duration) recipe
+    - find me some [indian](duration) recipe
+    - find me a [beef](main) recipe
+    - find me a [chicken](main) recipe
+    - find me a [cake](main) recipe
+    - find me some [beef](main) recipe
+    - find me some [chicken](main) recipe
+    - find me some [cake](main) recipe
+    - find me a main [beef](main) recipe
+    - find me a main [chicken](main) recipe
+    - find me a main [soup](main) recipe
+    - find me a main [fish](main) recipe
+    - find me some main [beef](main) recipe
+    - find me some main [chicken](main) recipe
+    - find me some main [soup](main) recipe
+    - find me some main [fish](main) recipe
+    - I want a [beef](main) recipe
+    - I want a [chicken](main) recipe
+    - I want a [fish](main) recipe
+    - I want some [beef](main) recipe
+    - I want some [chicken](main) recipe
+    - I want some [fish](main) recipe
+    - Could you find me a [pasta](main) recipe
+    - Could you find me some [pasta](main) recipe
+    - how to do [biscult](main)?
+    - show me a [simple way](duration: easy) to bake a [cake](main)
+    - show me a list of [chicken](main) recipe
+    - show me a list of [beef](main) recipe
+    - show me a list of [soup](main) recipe
+    - show me a list of [fish](main) recipe
+    - show me some [simple way](duration: easy) to bake a [cake](main)
+    - show me the [easy](duration) way to cook [chicken](main)
+    - show me the [easy](duration) way to cook [beef](main)
+    - show me the [easy](duration) way to cook [fish](main)
+    - show me a list of [chicken](main) recipe
+    - show me a list of [beef](main) recipe
+    - show me a list of [soup](main) recipe
+    - show me a list of [fish](main) recipe
+    - show me some [easy](duration) recipe
+    - I want to find a [beef](main) recipe around [30 mins](duration:under_30_minutes) can completed
+    - help me find a [chicken](main) recipe which can finish around [30 minutes](duration:under_30_minutes)
+    - help me find some [fish](main) recipe around [half of clock](duration:under_30_minutes) can be complete
+    - [beef](main)
+    - [fish](main)
+    - [chicken](main)
+    - [beef, chicken, fish](main)
+    - I want cook [steam](duration) [fish](main)
+    - show me some [steam](duration) recipes
+    - I have [chicken, onion, tomato](main)
+    - I have [beef, potato](main)
+    - I only have [fish and egg](main:fish, egg)
+    - I only have [chicken, potato, tomato](main:chicken, potato, tomato)
+    - I only have [chicken, potato, tomato](main)
+    - I only have [chicken breast, potato and egg](main)
+    - I want cook a recipe include [chicken and egg](main)
+    - my ingradient only have [chicken, onion](main)
+    - my ingradient only have [beef and egg](main)
+    - my ingradient only have [chicken, beef](main)
+    - my ingradient only have [tomato, bread, egg](main)
+
+- intent: request_easy_recipe
+  examples: |
+    - give me a [easy](duration) recipe
+    - I want a [easy](duration) recipe
+    - can you suggest me a [easy](duration) recipe
+    - I want to cook a simple recipe
+    - please suggest me a [easy](duration) and fast recipe
+    - what recipes are easy?
+    - can I have a [easy](duration) recipe
+    - could you give me a [easy](duration) recipe
+    - find me a recipe less than [30 minutes](duration)
+
+- intent: out_of_scope
+  examples: |
+    - I want to order food
+    - What is 2 + 2?
+    - Who's the US President?
+    - dasfasfa
+    - skdjsf
+
+- intent: inform
+  examples: |
+    - [chicken](main)
+    - how about [pasta](main)
+    - [asian](main)
+    - [beef](main)
+    - [fish](main)
+    - something with [pork](main)
+    - [sausages](main)
+    - I have [25 minutes](duration))
+    - I've only got [1 hour](duration))
+    - [30 mins](duration))
+    - [25 mins](duration)
+    - something with [chicken](main)
+    - an hour
+    - [pasta](main)
+    - [30 minutes](duration)
+    - something with [rice](main)
+    - [30 mins](duration)
+    - [rice](main)
+    - [shallots](main)
+    - [ciabatta loaf](main)
+    - [mangetout](main)
+    - [romaine lettuces](main)
+    - [steak](main)
+    - [bacon](main)
+    - [mascarpone](main)
+    - something with [noodles](main)
+    - [20 mins](duration)
+    - [an hour](duration)
+    - [half an hour](duration)
+    - something [quick](duration:30 minutes)
+    - about [45 minutes](duration)
+    - [40 mins](duration)
+    - [45 mins](duration)
+    - [noodles](main)
+    - [40 minutes](duration)
+    - an hour and half
+    - [beef](main)
+    - an hour and a half
+    - [shortcut-pumpkin-soup]
+
+- intent: inform_id
+  examples: |
+    - [1234](id)
+    - [0000](id)
+    - [9999](id)
+    - ID [3456](id)
+    - id [7314](id)
+
+- intent: inform_dietary
+  examples: |
+    - [vegan](dietary)
+    - [veggie](dietary:vegeterian)
+    - I'm [vegan](dietary)
+    - I am a [vegeterian](dietary)
+
+- intent: correct_dietary_negative
+  examples: |
+    - Actually I don't have any dietary requirements
+    - Actually change that, I don't have any dietaries
+
+- intent: change_choices
+  examples: |
+    - Actually can I change my choices
+    - Can I search for soemthing else
+    - Can I search again
+    - can i search for something else
+    - [ingredients](change_main)
+    - I want to change [both](change_both)
+    - [dish](change_main)
+    - [time to cook](change_duration)
+    - [duration](change_duration)
+    - I want to change [duration](change_duration)
+    - can i change my choices
+    - cooking [time](change_duration)
+    - actually i've changed my mind
+    - [both](change_both)
+    - [ingrediants](change_main:ingredients)
+    - i've changed my mind
+    - actually could I get something with [chicken](main)
+    - [time](change_duration)
+
+- synonym: 30 minutes
+  examples: |
+    - quick
+    - fast
+    - speedy
+    - snappy
+
+- synonym: ingredients
+  examples: |
+    - ingrediants
+
+- synonym: vegeterian
+  examples: |
+    - veggie
+
+- synonym: easy
+  examples: |
+    - simple
+    - more easy
+    - fast
+    - less than 30 minutes
+    - less than 30mins
+    - around 30 minutes
+    - 5 ingredients or less
+    - less than 5 ingredients
