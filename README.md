@@ -33,3 +33,13 @@ after all requirements and files was downloaded. You can start running the code 
 ```
 
 Then you can find the localhost in the Django server and use that server to open the website. So, you can start to use the systetm.
+
+## GUI
+**Website page**
+![GUI](https://user-images.githubusercontent.com/58298216/133365424-72c9028f-aac2-4df6-9c47-8d8ea5f9fff4.png)
+
+**Chatroom**
+![GUI2](https://user-images.githubusercontent.com/58298216/133365579-e30f066a-5b41-4bbf-b5c2-389aac5c6a4f.png)
+
+**Response**
+![response](https://user-images.githubusercontent.com/58298216/133365715-9c64445b-faae-4b9f-80dc-e3829ea9da4f.png)
